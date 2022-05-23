@@ -14,29 +14,31 @@
         <div id="TMB">
             <h3>Taxa de Metabolismo Basal</h3>
             <p>Quantas calorias são gastas para manter suas funções vitais ao longo de 24 horas</p>
-            <label>Peso:</label><input type="number" id="weight" class="info"><br>
-            <label>Altura:</label><input type="number" id="height" class="info"><br>
-            <label>Idade:</label><input type="number" id="age" class="info">
+            <label class="info" for="weight">Peso(kg):</label><input type="number" id="weight" class="info"><br>
+            <label class="info" for="height">Altura(cm):</label><input type="number" id="height" class="info"><br>
+            <label class="info" for="age">Idade:</label><input type="number" id="age" class="info">
             <br>
-            <button id="buttonTMB" onclick="calc1()">Calcular</button>
+            <button onclick="calc1()">Calcular</button>
         <h3>Sua taxa de Metabolismo Basal(TMB):</h3>
-        <span id="span1"></span>
+        <span id="span11"></span>
         </div>
         <div id="NDC">
             <h3>Necessidade diária de calorias(NDC)</h3>
             <p>Quantas calorias são gastas somando suas funções vitais e sua rotina diária de exércicios ao longo de 24 horas</p>
-            <input type="radio" id="sed" name="test">
+            <div id="radiondc">
+            <input type="radio" id="sed" name="test" onclick="sedexec()">
             <label for="sed">Sedentário</label>
-            <input type="radio" id="lev" name="test" >
+            <input type="radio" id="lev" name="test" onclick="levexec()">
             <label for="lev">Ativo Levemente</label>
-            <input type="radio" id="mod" name="test" >
+            <input type="radio" id="mod" name="test" onclick="modexec()">
             <label for="mod">Ativo Moderadamente</label>
-            <input type="radio" id="alt" name="test" >
-            <label for="alt">Ativo Altamente</label>
-            <input type="radio" id="ext" name="test" >
-            <label for="ext">Ativo Extremo</label>
             <br>
-            <button id="buttonNDC" onclick="calc2()">Calcular</button>
+            <input type="radio" id="alt" name="test" onclick="altexec()">
+            <label for="alt">Ativo Altamente</label>
+            <input type="radio" id="ext" name="test" onclick="extexec()">
+            <label for="ext">Ativo Extremo</label>
+        </div>
+            <br>
             <h3>Sua necessidade diária de calorias(NDC):</h3>
             <span id="span2"></span>
     </div>

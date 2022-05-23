@@ -3,7 +3,7 @@
     padding: 0;
 }
 body{
-    background-color: white;
+    background-color: black;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     height: 1240px;
@@ -20,10 +20,12 @@ main{
     margin-top: 40px;
 }
 h1{
+    font-size: 35px;
     margin: 50px;
     color: red;
 }
 h3{
+    font-size: 25px;
     color: red;
     margin: 30px;
 }
@@ -33,16 +35,14 @@ p{
     margin: 15px;
     font-weight: 500;
 }
-.info{
-    color: black;
-    margin: 15px;
-}
+
 span{
-    border: 5px solid red;
+    border: 3px solid red;
     border-radius: 5px;
     font-size: 18px;
     padding: 10px;
     box-sizing: border-box;
+    display: none;
 }
 label{
     font-size: 20px;
@@ -54,9 +54,17 @@ button{
     height: 40px;
     margin: 20px;
 }
-input{
-    font-size: 18px;
-    width: 70px;
-    height: 30px;
+#NDC input{
+    align-items: center;
     text-align: center;
+    width:15px;
+    height: 15px;
+}
+#radiondc{
+    margin: auto;
+    margin-top: 30px;
+    width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
