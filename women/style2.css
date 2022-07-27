@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #6E85B7;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    height: 1240px;
+}
+
+#gender{
+    display: grid;
+    width: 1000px;
+    height: 50px;
+    flex-direction: row;
+    grid-template-columns: auto auto;
+}
+
+#woman{
+    background-color: #B2C8DF;
+    border-radius: 0% 0% 20% 20%;
+}
+
+main{
+    text-align: center;
+    background-color: whitesmoke;
+    border: 10px solid #B2C8DF;
+    border-radius: 5px;
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+    margin-top: 40px;
+}
+h1{
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #6E85B7; 
+}
+h3{
+    font-size: 30px;
+    margin: 50px;
+}
+p{
+    font-size: 22px;
+    color: black;
+    margin: 15px;
+    font-weight: 550;
+}
+
+span{
+    border: 3px solid red;
+    border-radius: 5px;
+    font-size: 25px;
+    padding: 10px;
+    box-sizing: border-box;
+    display: none;
+}
+label{
+    font-size: 20px;
+}
+
+.infoi{
+    width: 100px;
+    height: 30px;
+    font-size: 25px;
+}
+
+.infol{
+    margin-bottom: 10px;
+}
+
+#inputinfos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#gender{
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+}
+
+
+button{
+    border-radius: 5px;
+    font-size: 18px;
+    width: 100px;
+    height: 50px;
+}
+
+#radiondc{
+    margin-top: 30px;
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+#radiondc input{
+    width: 20px;
+    height: 20px;
+}
+#radiondc input:hover{
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #6E85B7;
+}
+button:active{
+    cursor: pointer;
+    background-color: white;
+}
+
+#h1span11, #h1span2{
+    display: none;
+}
+
+#radios{
+    width: 50px;
+}
+a{
+    text-decoration: none;
+    color: red;
+}
+
+@media (max-width: 768px ){
+    #radiondc{
+        margin-top: 30px;
+        max-width: 1000px;
+        width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+    #radiondc input{
+        width: 35px;
+        height: 35px;
+    }
+    #radiondc input:hover{
+        cursor: pointer;
+        width: 35px;
+        height: 34px;
+    }
+}

@@ -5,11 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de TMB</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
 </head>
 <body>
  <div>
     <main id="main">
+        <div id="gender">
+            <a href="../women/women.html" id="woman"><p>Mulher</p></a>
+            <a href="" id="men"><p>Homem</p></a>
+        </div>
         <h1 id="maintitle">Calculadora de Taxa de Metabolismo Basal(TMB)</h1>
         <div id="TMB">
             <h3>Taxa de Metabolismo Basal</h3>
@@ -18,19 +22,13 @@
                 <label class="infol" for="weight">Peso(kg):</label><input type="number" id="weight" class="infoi"><br>
                 <label class="infol" for="height">Altura(cm):</label><input type="number" id="height" class="infoi"><br>
                 <label class="infol" for="age">Idade:</label><input type="number" id="age" class="infoi">
-                <label class="infol"  for="gender">Gênero:</label>
-                    <select id="gender">
-                        <option id="men">Homem</option>
-                        <option id="woman">Mulher</option>
-                    </select>
-            
             </div>
             <br>
             <button onclick="calc1()">Calcular</button>
             <h3 id="h1span11">Sua taxa de Metabolismo Basal(TMB):</h3>
             <span id="span11"></span>
         </div>
-        <div>
+        <div id="ndcdiv">
             <h3>Necessidade diária de calorias(NDC)</h3>
             <p>Quantas calorias são gastas somando suas funções vitais e sua rotina diária de exércicios ao longo de 24 horas</p>
             <div id="radiondc">
@@ -51,7 +49,7 @@
             <span id="span2"></span>
     </div>
     <div>
-        <a href="calcfator.html"><h3>Como é calculado?</h3></a>
+        <a href="calcfator.html" id="fatorh3"><h3>Como é calculado?</h3></a>
     </div>
     </main>
 </div>

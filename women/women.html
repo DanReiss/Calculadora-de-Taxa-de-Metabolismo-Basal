@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de TMB</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+ <div>
+    <main id="main">
+        <div id="gender">
+            <a href="" id="woman"><p>Mulher</p></a>
+            <a href="../men/index.html" id="men"><p>Homem</p></a>
+        </div>
+        <h1 id="maintitle">Calculadora de Taxa de Metabolismo Basal(TMB)</h1>
+        <div id="TMB">
+            <h3>Taxa de Metabolismo Basal</h3>
+            <p>Quantas calorias são gastas para manter suas funções vitais ao longo de 24 horas</p>
+            <div id="inputinfos">
+                <label class="infol" for="weight">Peso(kg):</label><input type="number" id="weight" class="infoi"><br>
+                <label class="infol" for="height">Altura(cm):</label><input type="number" id="height" class="infoi"><br>
+                <label class="infol" for="age">Idade:</label><input type="number" id="age" class="infoi">
+            </div>
+            <br>
+            <button onclick="calc1()">Calcular</button>
+            <h3 id="h1span11">Sua taxa de Metabolismo Basal(TMB):</h3>
+            <span id="span11"></span>
+        </div>
+        <div id="ndcdiv">
+            <h3>Necessidade diária de calorias(NDC)</h3>
+            <p>Quantas calorias são gastas somando suas funções vitais e sua rotina diária de exércicios ao longo de 24 horas</p>
+            <div id="radiondc">
+            <input type="radio" id="sed" name="test" onclick="sedexec()" class="radios">
+            <label for="sed">Sedentário</label>
+            <input type="radio" id="lev" name="test" onclick="levexec()" class="radios">
+            <label for="lev">Ativo Levemente</label>
+            <input type="radio" id="mod" name="test" onclick="modexec()" class="radios">
+            <label for="mod">Ativo Moderadamente</label>
+            <br>
+            <input type="radio" id="alt" name="test" onclick="altexec()" class="radios">
+            <label for="alt">Ativo Altamente</label>
+            <input type="radio" id="ext" name="test" onclick="extexec()" class="radios">
+            <label for="ext">Ativo Extremo</label>
+        </div>
+            <br>
+            <h3 id="h1span2">Sua necessidade diária de calorias(NDC):</h3>
+            <span id="span2"></span>
+    </div>
+    <div>
+        <a href="calcfator.html" id="fatorh3"><h3>Como é calculado?</h3></a>
+    </div>
+    </main>
+</div>
+    <script src="script2.js"></script>
+</body>
+</html>
