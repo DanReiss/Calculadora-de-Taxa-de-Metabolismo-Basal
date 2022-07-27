@@ -20,13 +20,12 @@ main{
     margin-top: 40px;
 }
 h1{
-    font-size: 35px;
-    margin: 50px;
-    color: red;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 h3{
-    font-size: 25px;
-    color: red;
+    font-size: 30px;
     margin: 30px;
 }
 p{
@@ -39,7 +38,7 @@ p{
 span{
     border: 3px solid red;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 25px;
     padding: 10px;
     box-sizing: border-box;
     display: none;
@@ -50,9 +49,8 @@ label{
 button{
     border-radius: 5px;
     font-size: 18px;
-    width: 80px;
-    height: 40px;
-    margin: 20px;
+    width: 100px;
+    height: 50px;
 }
 #NDC input{
     align-items: center;
@@ -61,10 +59,49 @@ button{
     height: 15px;
 }
 #radiondc{
+
     margin: auto;
     margin-top: 30px;
     width: 900px;
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+#inputinfos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info{
+    width: 100px;
+    height: 30px;
+    font-size: 25px;
+    text-align: center;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: red;
+}
+button:active{
+    cursor: pointer;
+    background-color: white;
+}
+
+#h1span11, #h1span2{
+    display: none;
+}
+
+#radios{
+    width: 50px;
+}
+
+#gender{
+    margin-top: 20px;
+    width: 175px;
+    height: 22px;
+    font-size: 20px;
+    text-align: center;
 }
